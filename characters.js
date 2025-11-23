@@ -31,7 +31,5 @@ const CHARACTER_LIST = [
 "saki.png",
 "nemu.png",
 "hasuha.png"
-"kimari.png"
-"eru.png"
-"jiai.png"
 ];
+
