@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="momohagamble.webp">
+    <title>Rentarou's Girlfriend Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rentarou's Girlfriend Roulette</h1> 
+    </header>
+
+    <nav class="mode-selector">
+        <button id="mode-single" class="active" data-mode="single">Girlfriend Selector</button>
+        <button id="mode-three" data-mode="three">Kanojo 3-Slot Machine</button>
+        <button id="mode-five" data-mode="five">Kanojo 5-Slot Machine</button>
+    </nav>
+    
+    <main id="app-container">
+        
+        <div id="single-selector" class="content-section active">
+            <div class="character-container">
+                <img id="main-character" src="" alt="Selected Character">
+                <div id="result-display" class="result-container">
+                    <span id="current-text">?</span>
+                </div>
+                <div id="heart-explosion-container"></div>
+            </div>
+            <button id="spin-button-single" class="spin-button">Choose Your Girlfriend</button>
+        </div>
+
+        <div id="three-slot" class="content-section">
+            <h2>Kanojo 3-Slot Machine</h2>
+            <div class="slot-row" data-slots="3">
+                <div class="slot-item"><img data-index="0" src="" alt="Slot 1"></div>
+                <div class="slot-item"><img data-index="1" src="" alt="Slot 2"></div>
+                <div class="slot-item"><img data-index="2" src="" alt="Slot 3"></div>
+            </div>
+            <button id="spin-button-three" class="spin-button">Roll Your Kanojos!</button>
+        </div>
+
+        <div id="five-slot" class="content-section">
+            <h2>Kanojo 5-Slot Machine</h2>
+            <div class="slot-row" data-slots="5">
+                <div class="slot-item"><img data-index="0" src="" alt="Slot 1"></div>
+                <div class="slot-item"><img data-index="1" src="" alt="Slot 2"></div>
+                <div class="slot-item"><img data-index="2" src="" alt="Slot 3"></div>
+                <div class="slot-item"><img data-index="3" src="" alt="Slot 4"></div>
+                <div class="slot-item"><img data-index="4" src="" alt="Slot 5"></div>
+            </div>
+            <button id="spin-button-five" class="spin-button">Roll Your Kanojos!</button>
+        </div>
+
+    </main>
+
+    <audio id="background-music" loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="spin-sound">
+        <source src="spin_sound.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="characters.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
