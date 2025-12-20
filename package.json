@@ -4,7 +4,7 @@
   "description": "Hyakkano Bot Web Dashboard for Koyeb",
   "main": "server.js",
   "engines": {
-    "node": "24.x"
+    "node": "22.x"
   },
   "scripts": {
     "start": "node server.js",
@@ -20,4 +20,5 @@
   "devDependencies": {
     "nodemon": "^3.1.0"
   }
+
 }
