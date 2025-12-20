@@ -1,0 +1,23 @@
+{
+  "name": "hyakkano-web-koyeb",
+  "version": "1.0.0",
+  "description": "Hyakkano Bot Web Dashboard for Koyeb",
+  "main": "server.js",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "better-sqlite3": "^11.3.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
